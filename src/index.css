@@ -1,0 +1,20 @@
+
+.navbar-brand{
+  height: 50px;
+  box-shadow: 10px 10px 5px grey;
+  border-radius: 50%
+}
+.mycart-btn{
+  border: none;
+  border-radius: 4%;
+
+}
+.mycart:hover{
+  border: none;
+  border-radius: 10%;
+}
+.mycart {
+  height: 50px;
+  width: 100%;
+  
+}
