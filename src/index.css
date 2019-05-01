@@ -1,6 +1,7 @@
 
 .navbar-brand{
-  height: 50px;
+  height: 70px;
+  width: 110px;
   box-shadow: 10px 10px 5px grey;
   border-radius: 50%
 }
