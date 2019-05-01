@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
 import PaypalButton from './paypalButton';
-
+import Developer from './developer';
 export default function CartTotals({value, history}) {
     const {cartSubTotal, cartTax, cartTotal,clearCart} =value;
   return (
@@ -34,6 +34,12 @@ export default function CartTotals({value, history}) {
                     <strong>$ {cartTotal}</strong>
               </h5>
               <PaypalButton total={cartTotal} clearCart={clearCart} history={history} />
+              <br />
+              <br />
+              <Link to="/developer">
+               <button className="btn btn-outline-info text-uppercase mb-3 px-5"
+                type="button" >Developer</button>
+              </Link>
             </div>
         </div>
         </div>

@@ -8,6 +8,7 @@ import NotFound from './NotFound';
 import Details from './Details';
 import Navbar from './Navbar';
 import Modal from './modal';
+import Developer from './developer'
 import {ProductProvider} from './context';
 import * as serviceWorker from './serviceWorker';
 
@@ -20,8 +21,10 @@ const humanhair=(
          <Route exact path="/" component={App} />
          <Route path="/Cart" component={Cart} />
          <Route path="/Details" component={Details} />
+         <Route path="/developer" component={Developer} />
          <Route component={NotFound} />
      </Switch>
+     
      <Modal />
      </div>
  </Router>
