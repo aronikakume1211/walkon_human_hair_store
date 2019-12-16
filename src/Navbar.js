@@ -26,10 +26,19 @@ export default class Navbar extends Component {
        <Link to="/Cart" className="ml-auto ">
         <ButtonContainer >
           <span className="mr-2">
-           <img src={cartlogo} className="mycart" />
-         {/*   <i className="fas fa-cart-plus" />  this can be settled before deploye*/} 
+           {/* <img src={cartlogo} className="mycart" /> */}
+           <i className="fas fa-cart-plus" />
           </span>
-        {/*   My Cart */}
+          My Cart
+        </ButtonContainer>
+       </Link>
+       <Link to="/Login" className="ml-auto ">
+        <ButtonContainer >
+          <span className="mr-2">
+           {/* <img src={cartlogo} className="mycart" /> */}
+           <i className="fas fa-login" />
+          </span>
+          Login
         </ButtonContainer>
        </Link>
       </NavWrapper>

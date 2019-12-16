@@ -10,6 +10,7 @@ import Navbar from './Navbar';
 import Modal from './modal';
 import Developer from './developer'
 import {ProductProvider} from './context';
+import Login from './Login';
 import * as serviceWorker from './serviceWorker';
 
 const humanhair=(
@@ -22,6 +23,7 @@ const humanhair=(
          <Route path="/Cart" component={Cart} />
          <Route path="/Details" component={Details} />
          <Route path="/developer" component={Developer} />
+         <Route path="/login" component={Login} />
          <Route component={NotFound} />
      </Switch>
      
@@ -36,6 +38,9 @@ const humanhair=(
 ReactDOM.render(
     humanhair, document.getElementById('root'));
 
+    if(module.hot){
+        module.hot.accept();
+    }
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
